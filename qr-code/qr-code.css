@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+   --white: hsl(0, 0%, 100%);
+   --light-gray: hsl(212, 45%, 89%);
+   --gray-blue: hsl(220, 15%, 55%);
+   --dark-blue: hsl(218, 44%, 22%);
+   --font-size: 15px;
+}
+
+body {
+	margin: 0;
+	margin-top: 10rem;
+	background: var(--light-gray);
+	font-family: 'Outfit';
+}
+
+.wrapper {
+	max-width: 300px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+.card {
+	width: 300px;
+	height: 475px;
+
+	background: var(--white);
+	border-radius: 20px;
+
+	padding: 15px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.card-image > img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	border-radius: 20px;
+}
+
+.card-content {
+	padding-inline: 1rem;
+}
+
+.card-content > h2, p {
+	width: 100%;
+	text-align: center;
+}
+
+.card-content > h2 {
+	color: var(--dark-blue);
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.card-content > p {
+	color: var(--gray-blue);
+	font-size: 1rem;
+	font-weight: 400;
+}
